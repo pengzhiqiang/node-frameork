@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="小诸葛科技有限公司">
+    <meta name="description" content="小诸葛科技有限公司">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>{+title /}</title>
+    {+headlink/}
+    <link rel="stylesheet" href="/css/base/base.css">
+</head>
+<body>
+<div class="main-wrap">
+    {+body /}
+</div>
+<script type="text/javascript" src='/js/lib/zepto.min.js'></script>
+<script type="text/javascript" src='/js/lib/touch.js'></script>
+{+footscript/}
+</body>
+</html>

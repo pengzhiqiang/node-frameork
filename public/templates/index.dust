@@ -1,0 +1,92 @@
+{>"master/layout" /}
+
+{<title}无优惠，不消费{/title}
+{<headlink}
+    <link rel="stylesheet" href='{#tagcss name="index.css" /}'>
+    <link rel="stylesheet" href="/css/lib/swiper-3.4.2.min.css">
+{/headlink}
+
+{<body}
+
+    <div class="top-notice">
+        {?couponsByUser.data}
+        <h2><i class="line-left"></i>{couponsByUser.data[0].userName}<i class="line-right"></i></h2>
+        {/couponsByUser.data}
+        <p>"无优惠,不消费"已为您节省 <span>￥{@eq key=couponAmount.data value=""}0{:else}{couponAmount.data}{/eq}</span></p>
+    </div>
+    {?couponsByUser.data}
+    <div class="coupon swiper-container">
+        <ul class="swiper-wrapper">
+            {#couponsByUser.data}
+            <li class="swiper-slide {#canUseTypeStr}can{:else}cant{/canUseTypeStr}" data-id='{couponId}'>
+                <div class="coupon-content">
+                    <div class="coupon-left">
+                        <div class="coupon-amount">{@eq key=couponType value="CASH"}<span>￥</span>{/eq}{amount}{@eq key=couponType value="DISCOUNT"}<span>折</span>{/eq}</div>
+                        <p>{#ifString key=couponType value="DISCOUNT" if="折扣券" else="现金券" /}</p>
+                    </div>
+                    <div class="coupon-right">
+                        <div class="coupon-btn-new {isGet}">{#ifString key=isGet value="NO" if="立即领取" else="已领取,买单使用" /}</div>
+                        <p>{couponName}</p>
+                    </div>
+                </div>
+                <div class="right-ico-wrap">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </li>
+            {/couponsByUser.data}
+        </ul>
+    </div>
+    {/couponsByUser.data}
+    <div class="banner">
+        <img src="images/business_ad@3x.png" alt="">
+    </div>
+    <div class="coupon-store-list">
+        <div class="coupon-store-list-title"><i></i>支持<span>「无优惠，不消费」</span>店家<i></i></div>
+        <div class="store-list">
+            {#allCoupons.data.pageData}
+            <a href="javascript:void(0)">
+                <div class="a-left">
+                    <span class="discount">{@eq key=couponType value="CASH"}<small>￥</small>{/eq}{amount}{@eq key=couponType value="DISCOUNT"}<small>折</small>{/eq}</span>
+                    <span class="couponType">{#ifString key=couponType value="DISCOUNT" if="折扣券" else="现金券" /}</span>
+                </div>
+                <div class="a-mid">
+                    <div class="name">{userName}</div>
+                    <div class="tips">{couponName}</div>
+                </div>
+                <div class="a-right">
+                    <div class="a-right-btn {isGet}" data-addr="{userAddress}" data-id='{couponId}'>{#ifString key=isGet value="NO" if="立即领取" else="立即使用" /}</div>
+                    <div class="a-right-endtime">效期至{#cutTime value=endTimeStr /}</div>
+                </div>
+            </a>
+            {/allCoupons.data.pageData}
+        </div>
+        <div class="get-more-btn">更多优惠</div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-left">
+            <a href="/cards">
+                <div class="coupon-icon"></div>
+                <p>我的卡卷</p>
+            </a>
+        </div>
+        <div class="bottom-right">
+            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU1MTE1Mjk1Mg==&scene=124#wechat_redirect">
+                <div class="coupon-icon"></div>
+                <p>分享与好友瓜分</p>
+            </a>
+        </div>
+    </div>
+    <div class="share-mask">
+        <img src="images/share-mask.png" alt="">
+    </div>
+{/body}
+
+{<footscript}
+    <script type="text/javascript" src='js/lib/swiper-3.4.2.jquery.min.js'></script>
+    <script type="text/javascript" src='{#tagjs name="index.js"/}'></script>
+{/footscript}

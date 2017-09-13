@@ -1,0 +1,119 @@
+{>"master/layout" /}
+
+{<title}安全收款，会员营销专家{/title}
+
+{<headlink}
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_352950_g3i8cuxnduprdx6r.css">
+    <link rel="stylesheet" href="/css/lib/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href='{#tagcss name="h5.css" /}'> 
+
+{/headlink}
+
+{<body}
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-1">
+                <div class="logo init">
+                    <img src="images/h5-logo.png" alt="">
+                </div>
+                <div class="part-1-title init">
+                    <img src="images/h5-ico-1.png" alt="">
+                </div>
+                <div class="part-1-img init">
+                    <img src="images/h5-img-1.jpg" alt="">
+                    <img src="images/h5-ani-1.png" class="abs-1" alt="">
+                    <img src="images/h5-ani-2.png" class="abs-2" alt="">
+                    <img src="images/h5-ani-3.png" class="abs-3" alt="">
+                    <img src="images/h5-ani-4.png" class="abs-4" alt="">
+                </div>
+                <div class="part1-text init">
+                    <p>欧付宝依托海量线上资源和技术实力，以自主研发的欧付宝APP门店收款营销软件为核心，以支付为入口，贯穿会员管理、拓客营销、联盟互推系统等，建立本地商家服务平台，并运用平台大数据，最终实现线上线下全渠道无缝对接。一站式帮助商家解决：支付、锁客、拉新、多渠道引流以及广告、金融服务、线上线下商城、城市活动等，真正把顾客与利润还给本地商家，打造线上线下实体店分享经济新零售模式。</p>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-2">
+                <div class="part2-title">零成本接入，聚合收款，秒速提现</div>
+                <div class="part2-img">
+                    <img src="images/mark-and-john1.gif" alt="">
+                </div>
+                <div class="part2-text">
+                    <p><span>聚合支付：</span>只需安装欧付宝商户端APP，即可拥有聚合支付能力：快速接入主流移动支付，如微信支付，支付宝，QQ钱包等，顺应生活便捷化、移动支付生活化的时代潮流，让消费收银更加轻松人性化！</p>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-3">
+                <div class="part2-title">商圈生态，共享客流，分享收益</div>
+                <div class="part2-img">
+                    <img src="images/h5-img-3.png" alt="">
+                    <img src="images/h5-img-4.png" class="abs-5" alt="">
+                </div>
+                <div class="part2-text">
+                    <p><span>红包互惠：</span>欧付宝打造独一无二的商圈生态，以小聚大，以大带小，小商户会员至大商户消费时，可收到来自大商户的红包回馈，流量共享，携手共赢！</p>
+                    <p><span>优惠券引流：</span>消费者支付后，可以收到来自商户的优惠券信息，以及附近商户的优惠信息，引导消费者再次使用优惠消费，形成完美商圈闭环。</p>
+                    <p><span>随时提现：</span>支持T+1、T+0、D+1、D+0等任您选择，超低费率。</p>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-4">
+                <div class="part2-title">支付即会员，储值享折扣</div>
+                <div class="part2-img">
+                    <img src="images/yoga-illustration2.gif" alt="">
+                    <img src="images/h5-ani-5.png" class="abs-6" alt="">
+                    <img src="images/h5-ani-6.png" class="abs-7" alt="">
+                </div>
+                <div class="part2-text">
+                    <p><span>会员系统：</span>消费者扫描付款码，即成为商家会员，通过欧付宝商家后台可以看到相关会员消费信息，直观展现日/周/月营业收入及新增会员数，关键数据一手掌握，助店主更科学的经营门店。</p>
+                    <p><span>微信储值卡：</span>消费者使用微信扫码，即可使用办卡并优惠买单，让店家快速收回资金，长期锁定客户价值。</p>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-5">
+                <div class="swiper-title">
+                    <img src="images/h5-ico-2.png" alt="">
+                </div>
+                <div class="swiper-com-title">聚合支付</div>
+                <div class="full-img">
+                    <img src="images/h5-img-2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>扫码支付，一码搞定，融合当前多种主流支付入口，如微信支付，支付宝，QQ钱包等，手机APP软件、POS机软件均支持主扫和被扫！不在店也可实时了解收款情况，生意管理从此更简单！</p>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-6">
+                <div class="swiper-com-title">电子会员卡</div>
+                <div class="full-img">
+                    <img src="images/h5-img-3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>全渠道线下领卡，扫码、公众号内、H5页面、支付后消息提醒 ，商家自定义卡券主题，自定义会员积分、等级，轻松搭建积分商城，低成本吸引二次消费。</p>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-7">
+                <div class="swiper-com-title">会员营销</div>
+                <div class="full-img">
+                    <img src="images/h5-img-4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>在所有的店面营销里视会员营销最为利器！支付即会员，取营销手法之四大精华（积分、满减、储值、送券），再辅以朋友圈分享功能，真正帮助本地商家实现锁客拉新！粉丝沉淀！利润倍增！</p>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-8">
+                <div class="swiper-title">
+                    <img src="images/h5-ico-3.png" alt="">
+                </div>
+                <div class="swiper-8-img">
+                    <img src="images/h5-img-5.jpg" alt="">
+                </div>
+                <div class="swiper-title">
+                    <img src="images/h5-ico-4.png" alt="">
+                </div>
+                <div class="swiper-img">
+                    <img src="images/h5-img-6.jpg" alt="">
+                    <a href="http://itunes.apple.com/cn/app/id1260478021" class="a1"></a>
+                    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.maxor.sellerapp" class="a2"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{/body}
+
+{<footscript}
+    <script type="text/javascript" src='js/lib/swiper-3.4.2.jquery.min.js'></script>
+    <script type="text/javascript" src='{#tagjs name="h5.js"/}'></script>
+{/footscript}

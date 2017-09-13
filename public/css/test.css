@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+}
+.main-wrap{
+  background: #f5f5f5
+}
+.title {
+  text-align: center;
+  font-size: 0.4rem;
+  line-height: .6rem;
+  margin: .5rem 0;
+}
+.title header img{
+  display: inline-block;
+  width: .6rem;
+  height: .6rem;
+  vertical-align: bottom;
+}
+
+.price-area {
+  width: 7rem;
+  height: 1.3rem;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: .1rem;
+  border: 1px solid #d4d0d2;
+  box-sizing: border-box;
+}
+
+.price-title {
+  display: block;
+  float: left;
+  width: 1.5rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  font-size: .4rem;
+  text-align: center;
+}
+
+.price-zone {
+  display: block;
+  float: right;
+  width: 5rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  margin-right: .2rem;
+  text-align: right;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.price-zone span {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: .5rem;
+  margin-right: .1rem;
+}
+
+.keyboard {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+}
+
+.keyboard table {
+  width: 100%;
+  height: 5.2rem;
+  border-collapse: collapse;
+}
+
+.keyboard table td {
+  width: 25%;
+  height: 1.3rem;
+  text-align: center;
+  font-size: .5rem;
+  -webkit-tap-highlight-color:#000;
+}
+.keyboard h2{
+  background: #f5f5f5;
+  text-align: center;
+  font-size: .3rem;
+  color: #999;
+  line-height: .6rem;
+  font-weight: normal;
+}
+.keyboard h2 sup{
+  font-size: .1rem
+}
+.del{
+  background: url(../images/home_delete@3x.png)no-repeat center;
+  background-size: 40%
+}
+
+.confirm-btn {
+  background: #09bd04;
+  font-size: .45rem;
+  color: #fff
+}
+
+.bdt {
+  border-top: 1px solid #f5f5f5;
+}
+
+.bdr {
+  border-right: 1px solid #f5f5f5;
+}
+
+.bdb {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.bdl {
+  border-left: 1px solid #f5f5f5;
+}
+.copy{
+  display: block;
+  width: 100%;
+  font-size: .28rem;
+  color:#999;
+  position: fixed;
+  bottom:5.5rem;
+  text-align: center;
+}
+.copy span{
+  display: inline-block;
+  font-size: .1rem;
+  vertical-align: text-top;
+}

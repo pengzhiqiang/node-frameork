@@ -1,0 +1,47 @@
+{>"master/layout" /}
+
+{<title}WeiXinPayDemo{/title}
+{<headlink}
+    <style media="screen">
+        .pay-btn{
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            margin: .5rem auto;
+        }
+        .pay-btn a{
+            display: block;
+            float: left;
+            width: 22%;
+            margin: 0 1.5%;
+            height: 1rem;
+            font-size: .4rem;
+            text-align: center;
+            line-height: 1rem;
+            border-radius: .1rem;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .btn-default{
+            border: 1px solid #09bb07;
+            color: #09bb07
+        }
+        .btn-curent{
+            color: #fff;
+            background: #09bb07
+        }
+    </style>
+{/headlink}
+
+{<body}
+    <section class="pay-btn">
+        <a href="javsacript:void(0)" class="btn-default btn-curent">0.01元</a>
+        <a href="javascript:void(0)" class="btn-default ">0.1元</a>
+        <a href="javascript:void(0)" class="btn-default ">5.1元</a>
+        <a href="javascript:void(0)" class="btn-default ">10元</a>
+    </section>
+{/body}
+
+{<footscript}
+    <script type="text/javascript" src='{#tagjs name="paydemo.js"/}'></script>
+{/footscript}

@@ -1,0 +1,174 @@
+body {
+  background: #f5f5f5;
+}
+body .top-nav {
+  width: 100%;
+  height: 1rem;
+  background: #fff;
+}
+body .top-nav ul {
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+}
+body .top-nav ul li {
+  height: 1rem;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.3rem;
+}
+body .top-nav ul li span {
+  display: inline-block;
+  height: 100%;
+  padding: 0 0..1rem;
+  border-bottom: 2px solid #fff;
+  box-sizing: border-box;
+}
+body .top-nav ul li.cur span {
+  color: #fa454f;
+  border-bottom: 2px solid #fa454f;
+}
+body .cards-wrap {
+  margin-top: 0.2rem;
+  padding-bottom: 1.25rem;
+  min-height: 6rem;
+  overflow: hidden;
+}
+body .cards-wrap a {
+  display: block;
+  width: 7.1rem;
+  height: 2rem;
+  margin: 0 auto 0.2rem;
+  border-radius: 0.08rem;
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+body .cards-wrap a.enable .icon {
+  background: #fa454f;
+}
+body .cards-wrap a.disable .icon {
+  background: #999;
+}
+body .cards-wrap a.disable .cards-left span {
+  color: #999;
+}
+body .cards-wrap a.disable .cards-left p {
+  color: #999;
+  text-overflow: ellipsis;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+body .cards-wrap a.disable .cards-right {
+  background: url(../images/be_overdue_icon@3x.png) 2.5rem 0.1rem no-repeat;
+  background-size: 40%;
+}
+body .cards-wrap a.disable .cards-right .cards-title {
+  color: #999;
+}
+body .cards-wrap a.used .cards-right {
+  background: url(../images/already_in_use_icon@3x.png) 2.5rem 0.1rem no-repeat;
+  background-size: 40%;
+}
+body .cards-wrap a.used .cards-right .cards-title {
+  color: #999;
+}
+body .cards-wrap a .cards-left-icon-wrpa {
+  width: 0.2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body .cards-wrap a .cards-left-icon-wrpa i {
+  display: block;
+  border-right: 0.05rem solid #fff;
+  border-top: 0.05rem solid transparent;
+  border-bottom: 0.05rem solid transparent;
+}
+body .cards-wrap a .cards-left {
+  width: 2.2rem;
+  height: inherit;
+  border-right: 1px dashed #e6e6e6;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+}
+body .cards-wrap a .cards-left span {
+  font-size: 0.7rem;
+  color: #fa454f;
+}
+body .cards-wrap a .cards-left span i {
+  font-size: 0.3rem;
+  font-style: normal;
+  margin-left: 0.05rem;
+}
+body .cards-wrap a .cards-left p {
+  font-size: 0.26rem;
+  color: #000;
+  text-overflow: ellipsis;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+body .cards-wrap a .cards-right {
+  width: 4.1rem;
+  height: 2rem;
+  float: left;
+  padding: 0.5rem 0 0.5rem 0.3rem;
+  box-sizing: border-box;
+}
+body .cards-wrap a .cards-right .cards-title {
+  font-size: 0.26rem;
+  color: #000;
+  line-height: 0.5rem;
+  text-overflow: ellipsis;
+  height: .5rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body .cards-wrap a .cards-right .cards-dead-line {
+  font-size: 0.22rem;
+  color: #999;
+  line-height: 0.4rem;
+  margin-top: 0.1rem;
+}
+body .cards-wrap a .to-location {
+  float: left;
+  width: .7rem;
+  height: 2rem;
+  text-align: center;
+  border-left: 1px dashed #e6e6e6;
+  box-sizing: border-box;
+}
+body .cards-wrap a .to-location i {
+  color: #fa424e;
+}
+body .bottom-btn {
+  position: fixed;
+  bottom: 0;
+  line-height: 1rem;
+  width: 100%;
+  text-align: center;
+  background: #f5f5f5;
+  z-index: 9999;
+}
+body .bottom-btn a {
+  display: block;
+  width: 7.1rem;
+  height: 1rem;
+  background: #fa424e;
+  text-decoration: none;
+  color: #fff;
+  font-size: .4rem;
+  display: inline-block;
+  margin-bottom: .2rem;
+  border-radius: 0.1rem;
+}

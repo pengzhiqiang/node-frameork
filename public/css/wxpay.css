@@ -1,0 +1,286 @@
+.wxpay-wrap {
+  position: relative;
+  -webkit-user-select: none;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.wxpay-wrap .top-img {
+  width: 100%;
+}
+.wxpay-wrap .top-img img {
+  display: block;
+  width: 100%;
+}
+.wxpay-wrap .pay-title {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.35rem;
+}
+.wxpay-wrap .pay-title span {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  vertical-align: bottom;
+  border-radius: 0.35rem;
+  margin-right: 0.1rem;
+  background: url(../images/business_icon@3x.png) no-repeat;
+  background-size: 100%;
+}
+.wxpay-wrap .pay-tips {
+  font-size: 0.25rem;
+  text-align: center;
+}
+.wxpay-wrap .pay-tips p {
+  display: inline-block;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  padding: 0 0.4rem;
+  border-radius: 0.25rem;
+  background: #f3f3f3;
+  margin: 0.2rem auto;
+}
+.wxpay-wrap .pay-tips p span {
+  color: #2cb34a;
+}
+.wxpay-wrap .pay-box {
+  width: 90%;
+  height: 1rem;
+  border: 1px solid #2ab34b;
+  margin: .1rem auto;
+  border-radius: .1rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.wxpay-wrap .pay-box .pay-name {
+  display: inline-block;
+  font-size: .24rem;
+  height: 1rem;
+  line-height: 1rem;
+  vertical-align: top;
+  padding: 0 0.2rem;
+}
+.wxpay-wrap .pay-box .pay-type {
+  float: right;
+  font-size: .3rem;
+  line-height: 1rem;
+  margin-right: .2rem;
+}
+.wxpay-wrap .pay-box .amount {
+  float: right;
+  font-size: .4rem;
+  line-height: 1rem;
+  margin-right: .2rem;
+  font-family: sans-serif;
+}
+.wxpay-wrap .pay-box .blink {
+  position: absolute;
+  top: .3rem;
+  right: .1rem;
+  width: 1px;
+  height: .4rem;
+  background: #000;
+  animation: blink 700ms infinite;
+  -webkit-animation: blink 700ms infinite;
+}
+.wxpay-wrap .pay-info {
+  margin-top: .2rem;
+}
+.wxpay-wrap .pay-info p {
+  font-size: .26rem;
+  color: #999;
+  text-align: center;
+  line-height: .5rem;
+}
+.wxpay-wrap .pay-info p span {
+  color: #333;
+  margin-left: .05rem;
+}
+.wxpay-wrap .pay-info p.tips {
+  color: #3a4e67;
+}
+.wxpay-wrap .pay-info p.tips span {
+  font-weight: bold;
+}
+.wxpay-wrap .pay-logo {
+  position: fixed;
+  max-width: 640px;
+  bottom: 5.2rem;
+  background: #f3f3f3;
+  padding: .1rem 0;
+}
+.wxpay-wrap .pay-logo img {
+  display: block;
+  width: 100%;
+}
+.wxpay-wrap .coupon-wrap {
+  margin-top: .2rem;
+  display: none;
+}
+.wxpay-wrap .coupon-wrap .total-coupon {
+  height: 1.3rem;
+  line-height: 1.3rem;
+  border-top: .2rem solid #f3f3f3;
+  border-bottom: .2rem solid #f3f3f3;
+  padding: 0 0.2rem;
+}
+.wxpay-wrap .coupon-wrap .total-coupon .coupon-left {
+  width: 50%;
+  height: inherit;
+  line-height: inherit;
+  float: left;
+  overflow: hidden;
+  font-size: .2rem;
+}
+.wxpay-wrap .coupon-wrap .total-coupon .coupon-left span {
+  padding: 0.1rem 0.15rem;
+  background: #fa4450;
+  color: #fff;
+  margin-right: .1rem;
+  border-radius: .05rem;
+}
+.wxpay-wrap .coupon-wrap .total-coupon .coupon-right {
+  width: 50%;
+  box-sizing: border-box;
+  height: inherit;
+  line-height: inherit;
+  float: left;
+  font-size: .25rem;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wxpay-wrap .coupon-wrap .total-coupon .coupon-right span {
+  font-size: .4rem;
+  color: #fa4450;
+  vertical-align: bottom;
+  font-family: sans-serif;
+}
+.wxpay-wrap .coupon-wrap .coupon-list {
+  padding-top: .4rem;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .coupon-list-title {
+  width: 57%;
+  margin: 0 auto;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .coupon-list-title img {
+  display: block;
+  width: 100%;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list {
+  padding: 0 0.2rem;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list ul {
+  width: 100%;
+  margin: .4rem auto;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list ul li {
+  height: 1rem;
+  line-height: 1rem;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list ul li:not(:last-child) {
+  border-bottom: 1px solid #f3f3f3;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list ul li .list-left {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 70%;
+  height: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: .26rem;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list ul li .list-left .list-ico {
+  padding: 0 0.1rem;
+  border: 1px solid #fa4450;
+  color: #fa4450;
+  font-style: normal;
+  border-radius: .05rem;
+  margin-right: .1rem;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list ul li .list-right {
+  display: block;
+  float: left;
+  vertical-align: top;
+  width: 30%;
+  height: inherit;
+  text-align: right;
+  font-size: .22rem;
+  color: #888;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list ul li .list-right b {
+  color: #fa4450;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list ul li .list-right i {
+  vertical-align: sub;
+  margin-left: .05rem;
+}
+.wxpay-wrap .coupon-wrap .coupon-list .list .sub-btn {
+  width: 90%;
+  height: 1rem;
+  background: #2ab34b;
+  font-size: .4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0 auto 0.4rem;
+  border-radius: .1rem;
+}
+.wxpay-wrap .keyboard {
+  width: 100%;
+  max-width: 640px;
+  height: 5.2rem;
+  position: fixed;
+  bottom: 0;
+}
+.wxpay-wrap .keyboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.wxpay-wrap .keyboard table tr td {
+  width: 25%;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  font-size: .6rem;
+  font-family: -apple-system, sans-serif;
+}
+.wxpay-wrap .keyboard table tr td.bdt {
+  border-top: 1px solid #f5f5f5;
+}
+.wxpay-wrap .keyboard table tr td.bdr {
+  border-right: 1px solid #f5f5f5;
+}
+.wxpay-wrap .keyboard table tr td.confirm-btn {
+  background: #2ab34b;
+  color: #fff;
+  font-size: .5rem;
+}
+.wxpay-wrap .keyboard table tr td i.iconfont {
+  font-size: .4rem;
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,84 @@
+{>"master/layout" /}
+
+{<title}欧付宝APP{/title}
+{<headlink}
+
+{/headlink}
+
+{<body}
+    <div class="logo"><img src="images/consumer-bg.png" alt=""></div>
+    <div class="intro">
+        <h1>欧付宝</h1>
+        <p>致力于以科技金融力量驱动实体商业发展</p>
+    </div>
+    <div class="download" id='getApp'>立即体验</div>
+    <style media="screen">
+        body{
+            background: #fada4b;
+            background: -webkit-linear-gradient(#fada4b, #ffc907);
+            background: -moz-linear-gradient(#fada4b, #ffc907);
+            background: -o-linear-gradient(#fada4b, #ffc907);
+            overflow: hidden;
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+        .title{
+            line-height: 50px;
+            text-align: center;
+        }
+        .intro{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .intro h1{
+            font-size: 24px;
+        }
+        .intro p{
+            line-height: 30px;
+        }
+        .logo{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 0;
+        }
+        .logo img{
+            display: block;
+            width: 100%;
+        }
+        .download{
+            width: 70%;
+            height: 50px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+    </style>
+{/body}
+
+{<footscript}
+    <script type="text/javascript">
+        $('body').height($(window).height());
+        var ua = navigator.userAgent;
+        var env = {};
+		if (!!ua.match(/android/i)) {
+            env.device = 'android';
+        } else if (!!ua.match(/iPhone|iPod|iPad/i)) {
+            env.device = 'ios';
+            env.IOSVersion = ua.match(/OS (\d*)_/)[1];
+        }
+        var getApp = document.getElementById('getApp');
+        getApp.addEventListener('click',function(event){
+            event.stopPropagation();
+            if(env.device === 'ios'){
+                location.href='http://itunes.apple.com/cn/app/id1260478021';
+            }else if(env.device === 'android'){
+                location.href='http://a.app.qq.com/o/simple.jsp?pkgname=com.maxor.sellerapp';
+            }
+        });
+    </script>
+{/footscript}

@@ -1,0 +1,72 @@
+{>"master/layout" /}
+
+{<title}欧付宝收银台{/title}
+{<headlink}
+<link rel="stylesheet" href="http://at.alicdn.com/t/font_352950_vybg6wudubp7rpb9.css">
+<link rel="stylesheet" href="css/cashier.css">
+{/headlink}
+
+{<body}
+    <div class="header">
+        <div class="header-center">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="name">欧付宝<span>收银台</span></div>
+            <div class="server-tel">客服电话：0755-26921492</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">
+            <span class="title-left"><i class="iconfont icon-roundcheckfill"></i>订单提交成功，请尽快完成付款！</span>
+            <span class="title-right">订单金额：<i>499.00</i>元</span>
+        </div>
+        <div class="details">
+            <div class="order-name">商品名称：<span>sdfasdfasadf</span><small class="details-toggle">订单详情<i class="iconfont icon-icon-arrow-down"></i></small></div>
+            <div class="order-details">
+                <p>订单编号：TS030432423432</p>
+                <p>下单时间：2017-08-17 14:28</p>
+            </div>
+        </div>
+        <div class="bank-list">
+            <div class="bank-list-title">选择付款方式：</div>
+            <div class="bank-list-wrap">
+                <div class="tab">
+                    <ul>
+                        <li class="def">个人网银支付</li>
+                        <li>企业网银支付</li>
+                        <li>扫码支付</li>
+                    </ul>
+                </div>
+                <div class="list-wrap">
+                    <div class="list-tab list-tab-0">
+                        <ul>
+                            <li><img src="images/boc.png" alt=""></li>
+                            <li><img src="images/ccb.png" alt=""></li>
+                            <li><img src="images/abc.png" alt=""></li>
+                            <li><img src="images/icbc.png" alt=""></li>
+                            <li><img src="images/cmbc.png" alt=""></li>
+                            <li><img src="images/comm.png" alt=""></li>
+                            <li><img src="images/pabc.png" alt=""></li>
+                            <li><img src="images/xybc.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="list-tab list-tab-1">
+                        2
+                    </div>
+                    <div class="list-tab list-tab-2">
+                        3
+                    </div>
+                </div>
+                <div class="pay-now-btn">确认支付</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright&copy;小诸葛科技（深圳）有限公司 <span>客服电话：0755-26921492</span></p>
+    </div>
+{/body}
+
+{<footscript}
+<script type="text/javascript" src='js/cashier.js'></script>
+{/footscript}

@@ -1,0 +1,154 @@
+{>"master/layout" /}
+
+{<title}无优惠，不消费{/title}
+{<headlink}
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_352950_k0eyxdrjurf6r.css">
+    <link rel="stylesheet" href='{#tagcss name="cards.css" /}'>
+    <link rel="stylesheet" href="/css/lib/swiper-3.4.2.min.css">
+{/headlink}
+
+{<body}
+    <div class="top-nav">
+        <ul>
+            <li class="cur"><span>未使用({#unused.data}{total}{:else}0{/unused.data})</span></li>
+            <li><span>已使用({#used.data}{total}{:else}0{/used.data})</span></li>
+            <li><span>已过期({#overdue.data}{total}{:else}0{/overdue.data})</span></li>
+        </ul>
+    </div>
+    <div class="cards-wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    {#unused.data.pageData}
+                    {! <a href="http://apis.map.qq.com/tools/routeplan/eword={userAddress}?referer=opay8&key=MIRBZ-WCFW6-IBQS5-ERJQD-RAAAS-32FB2" class="enable"> !}
+                    <a href='javascript:void(0)' class="enable">
+                        <div class="cards-left-icon-wrpa icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="cards-left">
+                            <span>{amount}<i>元</i></span>
+                            <p>{couponName}</p>
+                        </div>
+                        <div class="cards-right">
+                            <div class="cards-title">
+                                {userName}
+                            </div>
+                            <div class="cards-dead-line">
+                                有效期:{#cutTime value=startTimeStr/}至{#cutTime value=endTimeStr/}
+                            </div>
+                        </div>
+                        <div class="to-location">
+                            <i class="iconfont icon-location"></i>
+                        </div>
+                    </a>
+                    {/unused.data.pageData}
+                </div>
+                <div class="swiper-slide">
+                    {#used.data.pageData}
+                    <a href="javascript:void(0)" class="enable used">
+                        <div class="cards-left-icon-wrpa icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="cards-left">
+                            <span>{maxAmount}<i>元</i></span>
+                            <p>{couponName}</p>
+                        </div>
+                        <div class="cards-right">
+                            <div class="cards-title">
+                                {userName}
+                            </div>
+                            <div class="cards-dead-line">
+                                有效期:{#cutTime value=startTimeStr/}至{#cutTime value=endTimeStr/}
+                            </div>
+                        </div>
+                    </a>
+                    {/used.data.pageData}
+                </div>
+                <div class="swiper-slide">
+                    {#overdue.data.pageData}
+                    <a href="javascript:void(0)" class="disable">
+                        <div class="cards-left-icon-wrpa icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="cards-left">
+                            <span>{maxAmount}<i>元</i></span>
+                            <p>{couponName}</p>
+                        </div>
+                        <div class="cards-right">
+                            <div class="cards-title">
+                                {userName}
+                            </div>
+                            <div class="cards-dead-line">
+                                有效期:{#cutTime value=startTimeStr/}至{#cutTime value=endTimeStr/}
+                            </div>
+                        </div>
+                    </a>
+                    {/overdue.data.pageData}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-btn"><a href="javascript:history.go(-1)">返回无优惠不消费</a></div>
+{/body}
+
+{<footscript}
+    <script type="text/javascript" src='js/lib/swiper-3.4.2.jquery.min.js'></script>
+    <script type="text/javascript" src='{#tagjs name="cards.js"/}'></script>
+{/footscript}
