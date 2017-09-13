@@ -1,6 +1,0 @@
-{>"master/layout" /}
-
-{<body}
-    <h1>Error</h1>
-    {#err/}
-{/body}
